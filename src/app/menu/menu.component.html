@@ -1,0 +1,25 @@
+<div >
+  <div class="col-md-6">
+    <input type="text" 
+          class="form-control"
+          placeholder = "input text" 
+          [(ngModel)]="aaa"
+          (change)="printAaa(aaa)"
+          />
+    <div>{{aaa}}</div>
+  </div>
+  <div class="col-md-6">
+      <input type="text" 
+            class="form-control"
+            placeholder = "input text" 
+            [(ngModel)]="range"
+            (ngModelChange)="saverange($event)"
+            />
+      <div>{{range}}</div>
+    </div>
+</div>
+<br/><br/>
+<button class="btn btn-info" 
+       (click)="checkData()">
+       from function
+</button>
